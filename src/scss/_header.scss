@@ -1,0 +1,49 @@
+%fontHeader {
+    font-family: $fontMontserrat;
+    font-size: 1em;
+    line-height: 24px;
+}
+
+// HEADER
+.header__wrapper {
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include gradient(#E3FDF5, #FFE6FA);
+    font-size: 14px;
+}
+.header__menuList {
+    display: flex;
+}
+.header__menuItem {
+    position: relative;
+    margin-right: 60px;
+}
+.header__menuItem::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    background-color: #FB4516;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.header__menuItem:hover::before {
+    width: 100%;
+    transform: scaleX(1);
+    transition: transform 0.25s;
+}
+.header__menuItem:last-child {
+    margin-right: 0px;
+}
+.header__menuLink {
+    @extend %fontHeader;
+    font-weight: 500;
+}
+.header__getFreeBlock {
+    @extend %linkFree;
+    font-weight: 600;
+}
