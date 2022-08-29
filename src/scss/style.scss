@@ -1,2 +1,43 @@
-// @import "fonts";
+@import "fonts";
 
+// Переменные, миксины, расширения
+$fontMontserrat: Montserrat, sans-serif;
+$fontRoboto: Roboto, sans-serif;
+$fontGotham: gothampro, sans-serif;
+$stateBlue: #645CC3;
+$SilverLight: #F7F7F8;
+$white: #FFFFFF;
+
+@mixin gradient($color1, $color2) {
+    background: linear-gradient(90deg, $color1 0%, $color2 100%);
+}
+
+%linkFree {
+    padding: 14px 30px;
+    @extend %fontHeader;
+    font-weight: 600px;
+    border: 1px solid #141414;
+    border-radius: 100px;
+}
+// Общие стили и сброс
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $fontGotham;
+}
+a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+}
+.container {
+    width: 100%;
+}
+
+@import 'header';
