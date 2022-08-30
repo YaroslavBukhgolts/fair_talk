@@ -7,17 +7,37 @@ $fontGotham: gothampro, sans-serif;
 $stateBlue: #645CC3;
 $SilverLight: #F7F7F8;
 $white: #FFFFFF;
+$coquelicot: #FB4516;
+$heightFullScreen: 100vh - 10vh;
+
 
 @mixin gradient($color1, $color2) {
     background: linear-gradient(90deg, $color1 0%, $color2 100%);
 }
 
+%flex {
+    display: flex;
+}
+
 %linkFree {
     padding: 14px 30px;
     @extend %fontHeader;
-    font-weight: 600px;
+    font-weight: 600;
     border: 1px solid #141414;
     border-radius: 100px;
+    transition-duration: 0.7s;
+    a {
+        transition-duration: 0.7s; 
+    }
+}
+%linkFreeHover {
+    background-color: $coquelicot;
+    cursor: pointer;
+    transition-duration: 0.7s;
+    a{
+        color: $white;
+        transition-duration: 0.7s;
+    }
 }
 // Общие стили и сброс
 * {
@@ -25,8 +45,8 @@ $white: #FFFFFF;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: $fontGotham;
+html, body {
+    min-height: 100%;
 }
 a {
     color: black;
@@ -41,3 +61,4 @@ ul {
 }
 
 @import 'header';
+@import 'mainBaner';
