@@ -1,6 +1,6 @@
 %fontHeader {
     font-family: $fontMontserrat;
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 24px;
 }
 
@@ -46,4 +46,10 @@
 .header__getFreeBlock {
     @extend %linkFree;
     font-weight: 600;
+}
+.header__getFreeBlock:hover {
+    @extend %linkFreeHover;
+    a {
+        color: $white;
+    }
 }
