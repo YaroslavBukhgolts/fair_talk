@@ -43,12 +43,12 @@
     @extend %fontHeader;
     font-weight: 500;
 }
-.header__getFreeBlock {
-    @extend %linkFree;
+.linkFreeBlock {
+    @include linkFree;
     font-weight: 600;
 }
-.header__getFreeBlock:hover {
-    @extend %linkFreeHover;
+.linkFreeBlock:hover {
+    @include linkFreeHover;
     a {
         color: $white;
     }
