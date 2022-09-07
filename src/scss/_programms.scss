@@ -82,6 +82,7 @@ $border_radius: 16px;
 }
 .price__item {
     @extend %flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
@@ -169,4 +170,21 @@ $border_radius: 16px;
 }
 .price__linkFree {
     color: $white;
+}
+
+.discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #645CC3;
+    width: 50%;
+    text-align: center;
+    color: $white;
+    padding-top: 37px;
+    padding-bottom: 47px;
+    border-radius: 100% 0% 23% 77% / 0% 30% 70% 100%;
+    font-family: gothampro;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 20px;
 }
