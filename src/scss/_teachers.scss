@@ -84,3 +84,21 @@
     line-height: 20px;
     text-align: center;
 }
+.teachers__navigation {
+    text-align: center;
+    margin-top: 50px;
+}
+.button__navigation {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    span {
+        font-size: 25px;
+    }
+}
+.prev {
+    margin-right: 10px;
+}
