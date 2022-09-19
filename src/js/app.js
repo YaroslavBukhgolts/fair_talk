@@ -4,8 +4,13 @@ import * as activeTabs from  './modules/tabs.js';
 myFunctions.isWebp();
 activeTabs.activeTabs();
 
-
-// Слайдер swiper
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiper = new Swiper();
+// Swiper
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 3,
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+  },
+  grabCursor: true,
+});
