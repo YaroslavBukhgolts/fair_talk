@@ -24,6 +24,13 @@ $heightFullScreen: 100vh - 10vh;
     margin-bottom: 90px;
 }
 
+@mixin centerElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 %flex {
     display: flex;
 }
@@ -69,7 +76,7 @@ ul {
     width: 100%;
 }
 .section {
-    padding: 50px (315px/1920px*100%);
+    padding: 100px (315px/1920px*100%);
     // height: 100vh;
 }
 
@@ -77,3 +84,4 @@ ul {
 @import 'mainBaner';
 @import 'programms';
 @import 'bonus';
+@import 'teachers';

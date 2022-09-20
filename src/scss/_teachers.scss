@@ -1,0 +1,109 @@
+@mixin rotateY($deg){
+    transform: rotateY($deg);
+    transition-duration: 1.5s;
+}
+
+.teachers {
+    background-color: $SilverLight;
+    display: flex;
+    flex-direction: column;
+}
+.teachers__block {
+    width: 100%;
+    height: 100%;
+}
+.section-teachers__title{
+    margin-bottom: 60px;
+}
+.swiper1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.techers__list {
+    @extend %flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.teachers__item {
+    position: relative;
+    width:350px;
+    height: 400px;
+    perspective: 1000px;
+}
+.item__front,
+.item__back {
+    position: absolute;
+    border-radius: 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition-duration: 1.5s;
+    padding: 20px;
+    background-color: $white;
+    cursor: pointer;
+}
+.item__front {
+    @include centerElement;
+}
+.item__back {
+    @include centerElement;
+    @include rotateY(180deg);
+}
+.teachers__item:hover .item__front{
+    @include rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.teachers__item:hover .item__back {
+    @include rotateY(360deg);
+    transform: rotateY(360deg);
+}
+.teachers__photoBlock {
+    width: 80%;
+    margin-bottom: 25px;
+}
+.teachers__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.teachers__title {
+    font-family: gothampro;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 32px;
+    color: #645CC3;
+    
+}
+.teachers__text {
+    font-family: gothampro;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 20px;
+    text-align: center;
+}
+.teachers__navigation {
+    text-align: center;
+    margin-top: 50px;
+}
+.button__navigation {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    span {
+        font-size: 25px;
+    }
+}
+.prev {
+    margin-right: 10px;
+}
