@@ -76,7 +76,7 @@ ul {
     width: 100%;
 }
 .section {
-    padding: 100px (315px/1920px*100%);
+    padding: 100px calc(315px/1920px*100%);
     // height: 100vh;
 }
 
@@ -86,3 +86,4 @@ ul {
 @import 'bonus';
 @import 'teachers';
 @import 'learning';
+@import 'form';
