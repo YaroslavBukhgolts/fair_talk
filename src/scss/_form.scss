@@ -1,3 +1,100 @@
-.form {
-    
+.form-section {
+    background: url('../img/form/bg_ellipse.svg') no-repeat 10% 12%,
+    url('../img/form/bg_img.png') no-repeat 895px 60px,
+    linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.form__textContent {
+    max-width: 472px;
+}
+.textContent__title {
+    font-family: $fontGotham;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 44px;
+    color: $white;
+    margin-bottom: 40px;
+}
+.textContent__list > p {
+    font-family: $fontGotham;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.textContent__listItem {
+    position: relative;
+    font-family: $fontGotham;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: 16px;
+}
+.textContent__listItem::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    background-color: $white;
+}
+.formBlock {
+    max-width: 400px;
+    height: 342px;
+    background: #FFFFFF;
+    box-shadow: 8px 25px 90px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px 40px 40px 40px;
+}
+.form__title {
+    font-family: 'Gotham Pro';
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 28px;
+    color: #141414;
+    margin-bottom: 30px;
+}
+.form__input{
+    width: 320px;
+    background: #F7F7F8;
+    border-radius: 100px;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    color: #8B8B8B;
+    outline: none;
+}
+.form__input:first-child {
+    margin-bottom: 12px;
+}
+.form__input:nth-child(2) {
+    margin-bottom: 30px;
+}
+.button {
+    width: 100%;
+    background: #645CC3;
+    border-radius: 100px;
+    padding: 12px 58px;
+    font-family: $white;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    transition-duration: 0.7s;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: $coquelicot;
+    transition-duration: 0.7s;
+}
+.button:active {
+    transform: scale(0.9);
 }

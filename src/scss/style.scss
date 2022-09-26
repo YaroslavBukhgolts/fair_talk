@@ -39,7 +39,7 @@ $heightFullScreen: 100vh - 10vh;
     padding: 14px 30px;
     @extend %fontHeader;
     font-weight: 600;
-    border: 1px solid #141414;
+    outline: 1px solid #141414;
     border-radius: 100px;
     transition-duration: 0.7s;
     a {
@@ -49,6 +49,7 @@ $heightFullScreen: 100vh - 10vh;
 @mixin linkFreeHover {
     background-color: $coquelicot;
     cursor: pointer;
+    outline: none;
     transition-duration: 0.7s;
     a{
         color: $white;
