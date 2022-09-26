@@ -1,8 +1,8 @@
 .mainBaner {
-    background: url('../img/1.jpg') (1850px/1920px * 100%) center/40% no-repeat,
+    background: url('../img/1.jpg') calc(1850px/1920px * 100%) center/40% no-repeat,
     linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%),;
     min-height: $heightFullScreen;
-    padding-left: (310px / 1920px) * 100%;
+    padding-left: calc(310px / 1920px) * 100%;
     @extend %flex;
     flex-direction: column;
     justify-content: center;
