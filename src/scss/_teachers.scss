@@ -104,6 +104,12 @@
         font-size: 25px;
     }
 }
+.button__navigation:hover{
+    opacity: 0.8;
+}
+.button__navigation:active {
+    transform: scale(0.9);
+}
 .prev {
     margin-right: 10px;
 }

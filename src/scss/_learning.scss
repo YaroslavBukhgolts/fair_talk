@@ -1,0 +1,43 @@
+.learning__title {
+    margin-bottom: 30px;
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 32px;
+    color: #141414;
+    margin-bottom: 60px;
+}
+.learning__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.learning__card {
+    max-width: 20%;
+    height: 350px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    -webkit-box-shadow: 1px 1px 4px 2px rgb(0 0 0 / 50%);
+    box-shadow: 1px 1px 4px 2px rgb(0 0 0 / 50%);
+}
+.learning__card-icon {
+    margin-bottom: 110px;
+}
+.learning__card-title {
+    font-family: $fontGotham;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 28px;
+    color: #141414;
+    margin-bottom: 12px;
+}
+.learning__card__text {
+    font-family: $fontGotham;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 20px;
+    color: #141414;
+}
