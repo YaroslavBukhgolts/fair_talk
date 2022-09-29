@@ -1,0 +1,74 @@
+@media  screen and (min-width:1870px) {
+    
+}
+
+@media  screen and (max-width:1725px) {
+    .mainBaner__title {
+        font-size: 5em;
+    }
+}
+
+@media  screen and (max-width:1437px) {
+    .mainBaner__title {
+        font-size: 4em;
+    }
+}
+
+@media  screen and (max-width:1150px) {
+    .mainBaner__title {
+        font-size: 3em;
+        line-height: 70px;
+    }
+    .header__menuItem {
+        margin-right: 30px;
+    }
+}
+
+@media  screen and (max-width:1115px) {
+    .mainBaner__title {
+        font-size: 2em;
+        line-height: 50px;
+    }
+
+}
+
+@media  screen and (max-width:1024px) {
+    .header__wrapper {
+        flex-wrap: wrap;
+    }
+    .header__menu {
+        order: 1;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .header__menuList {
+        justify-content: space-between;
+    }
+    .mainBaner {
+        min-height: 60vh;
+    }
+}
+
+@media  screen and (max-width:646px) {
+    .header__wrapper {
+        padding: 30px 60px 0px 60px;
+    }
+    .header__menu,
+    .linkFreeBlock {
+        display: none;
+    }
+    .header__burger-menu {
+        display: block;
+    }
+}
+
+@media  screen and (max-width:575px) {
+    .mainBaner {
+        background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+        min-height: 35vh;
+    }
+    .mainBaner__title {
+        width: 100%;
+        font-size: 2.5em;
+    }
+}
