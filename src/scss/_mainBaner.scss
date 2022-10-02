@@ -2,7 +2,7 @@
     background: url('../img/1.jpg') calc(1850px/1920px * 100%) center/40% no-repeat,
         url('../img/Ellipse3.svg') no-repeat 47% 1%,
         url('../img/Vector1.svg') no-repeat 10% 90%,
-        url('../img/Vector2.svg') no-repeat 90% 90%,
+        url('../img/Vector2.svg') no-repeat 90% 95%,
         linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%),;
     min-height: $heightFullScreen;
     padding-left: calc(310px / 1920px) * 100%;
@@ -18,3 +18,5 @@
     line-height: 92px;
     width: 50%;
 }
+
+@import 'media';
