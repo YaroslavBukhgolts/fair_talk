@@ -1,16 +1,52 @@
-@media  screen and (min-width:1870px) {
-    
-}
-
 @media  screen and (max-width:1725px) {
     .mainBaner__title {
         font-size: 5em;
     }
 }
 
+@media screen and (max-width: 1650px) {
+    .price_programms__list{
+        margin-bottom: 60px;
+    }    
+    .price_programms__item {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 1540px){
+    .price_programms {
+        padding: 100px 80px;
+    }
+}
+
 @media  screen and (max-width:1437px) {
     .mainBaner__title {
         font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .price_programms {
+        padding: 80px;
+    }
+    .price_programms__icons {
+        width: 15%;
+    }
+    .price_programms__title {
+        font-size: 1.3em;
+    }
+    .price__list{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .price__item {
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .section__title {
+        font-size: 2.5em;
     }
 }
 
@@ -49,6 +85,27 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .section__title {
+        font-size: 2.3em;
+    }
+    .price_programms__title {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .section__title {
+        font-size: 2.1em;
+    }    
+    .price_programms__icons {
+        display: none;
+    }
+    .price__item {
+        max-width: 48%;
+    }
+}
+
 @media  screen and (max-width:646px) {
     .header__wrapper {
         padding: 30px 60px 0px 60px;
@@ -59,6 +116,22 @@
     }
     .header__burger-menu {
         display: block;
+    }
+    // 2-nd block
+    .price_programms {
+        padding: 60px;
+    }
+    .price_programms__list {
+        flex-direction: column;
+    }
+    .section__title {
+        text-align: center;
+    }
+    .price__list {
+        justify-content: center;
+    }
+    .price__item {
+        max-width: 100%;
     }
 }
 
@@ -83,6 +156,15 @@
 @media  screen and (max-width:510px) {
     .mainBaner__title {
         font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .header__wrapper {
+        padding: 30px 20px 0px 20px;
+    }
+    .price_programms {
+        padding: 30px 20px;
     }
 }
 
