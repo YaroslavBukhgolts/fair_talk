@@ -1,10 +1,12 @@
 @media  screen and (max-width:1725px) {
+    // 1-st block
     .mainBaner__title {
         font-size: 5em;
     }
 }
 
 @media screen and (max-width: 1650px) {
+    // 2-nd block
     .price_programms__list{
         margin-bottom: 60px;
     }    
@@ -14,18 +16,21 @@
 }
 
 @media screen and (max-width: 1540px){
-    .price_programms {
+    // 2-nd block
+    .price_programms, .bonus {
         padding: 100px 80px;
     }
 }
 
 @media  screen and (max-width:1437px) {
+    // 1-st block
     .mainBaner__title {
         font-size: 4em;
     }
 }
 
 @media screen and (max-width: 1300px) {
+    // 2-nd block
     .price_programms {
         padding: 80px;
     }
@@ -51,6 +56,7 @@
 }
 
 @media  screen and (max-width:1150px) {
+    // 1-st block
     .mainBaner__title {
         font-size: 3em;
         line-height: 70px;
@@ -61,6 +67,7 @@
 }
 
 @media  screen and (max-width:1115px) {
+    // 1-st block
     .mainBaner__title {
         font-size: 2em;
         line-height: 50px;
@@ -69,6 +76,7 @@
 }
 
 @media  screen and (max-width:1024px) {
+    // 1-st block
     .header__wrapper {
         flex-wrap: wrap;
     }
@@ -89,6 +97,7 @@
     .section__title {
         font-size: 2.3em;
     }
+    // 2-nd block
     .price_programms__title {
         font-size: 1.2em;
     }
@@ -97,12 +106,20 @@
 @media screen and (max-width:900px) {
     .section__title {
         font-size: 2.1em;
-    }    
+    }  
+    // 2-nd block  
     .price_programms__icons {
         display: none;
     }
     .price__item {
         max-width: 48%;
+    }
+    // 3-rd block
+    .bonus__item {
+        min-width: 48%;
+    }
+    .bonus__item:nth-child(4) {
+        order: 1;
     }
 }
 
@@ -133,9 +150,14 @@
     .price__item {
         max-width: 100%;
     }
+    // 3-rd block
+    .bonus__item {
+        min-width: 100%;
+    }
 }
 
 @media  screen and (max-width:575px) {
+    // 1-st block
     .mainBaner {
         background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
         min-height: 35vh;
@@ -154,21 +176,28 @@
 }
 
 @media  screen and (max-width:510px) {
+    // 1-st block
     .mainBaner__title {
         font-size: 2em;
     }
 }
 
 @media screen and (max-width: 460px) {
+    .section__title {
+        margin-bottom: 50px;
+    }
+    // 1-st block
     .header__wrapper {
         padding: 30px 20px 0px 20px;
     }
-    .price_programms {
+    // 2-nd block
+    .price_programms, .bonus {
         padding: 30px 20px;
     }
 }
 
 @media  screen and (max-width:425px) {
+    // 1-st block
     .mainBaner {
         min-height: 30vh;
     }
@@ -178,6 +207,7 @@
 }
 
 @media  screen and (max-width:400px) {
+    // 1-st block
     .mainBaner {
         min-height: 25vh;
     }
@@ -188,6 +218,7 @@
 }
 
 @media  screen and (max-width:340px) {
+    // 1-st block
     .mainBaner {
         min-height: 20vh;
     }
