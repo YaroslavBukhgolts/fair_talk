@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 1540px){
     // 2-nd block
-    .price_programms, .bonus {
+    .price_programms, .bonus, .teachers {
         padding: 100px 80px;
     }
 }
@@ -191,7 +191,7 @@
         padding: 30px 20px 0px 20px;
     }
     // 2-nd block
-    .price_programms, .bonus {
+    .price_programms, .bonus, .teachers {
         padding: 30px 20px;
     }
 }
@@ -224,5 +224,18 @@
     }
     .mainBaner__title {
         font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    // 3 -rd block
+    .section-teachers__title {
+        margin-bottom: 20px;
+    }
+    .teachers__item {
+        width: 100%;
+    }
+    .teachers__title {
+        text-align: center;
     }
 }
