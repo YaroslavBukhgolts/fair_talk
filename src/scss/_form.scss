@@ -1,6 +1,6 @@
 .form-section {
     background: url('../img/form/bg_ellipse.svg') no-repeat 10% 12%,
-    url('../img/form/bg_img.jpg') no-repeat 895px 60px,
+    url('../img/form/bg_img.jpg') no-repeat 60% 60px,
     linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
     display: flex;
     align-items: baseline;
@@ -45,7 +45,6 @@
 }
 .formBlock {
     max-width: 400px;
-    height: 342px;
     background: #FFFFFF;
     box-shadow: 8px 25px 90px rgba(0, 0, 0, 0.1);
     border-radius: 12px;

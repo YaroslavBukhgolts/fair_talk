@@ -3,6 +3,11 @@
     .mainBaner__title {
         font-size: 5em;
     }
+    .form-section {
+        background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, 
+                    url("../img/form/bg_img.jpg") no-repeat 60% 60px, 
+                    linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
 }
 
 @media screen and (max-width: 1650px) {
@@ -17,8 +22,13 @@
 
 @media screen and (max-width: 1540px){
     // 2-nd block
-    .price_programms, .bonus, .teachers, .learning {
+    .price_programms, .bonus, .teachers, .learning, .form-section {
         padding: 100px 80px;
+    }
+    .form-section {
+        background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, 
+                    url("../img/form/bg_img.jpg") no-repeat 60% 60px, 
+                    linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
     }
 }
 
@@ -46,6 +56,11 @@
     }
     .price__item {
         max-width: 30%;
+    }
+    .form-section {
+        background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, 
+                    url("../img/form/bg_img.jpg") no-repeat 50% 60px, 
+                    linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
     }
 }
 
@@ -132,6 +147,23 @@
     .bonus__item:nth-child(4) {
         order: 1;
     }
+    // form section
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
+    .form__textContent {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-section {
+        background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, 
+        url(../img/form/bg_img.jpg) no-repeat 90% 65%, 
+        linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
 }
 
 @media  screen and (max-width:646px) {
@@ -165,6 +197,10 @@
     .bonus__item {
         min-width: 100%;
     }
+    // form-section
+    .form-section {
+        background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
 }
 
 @media  screen and (max-width:575px) {
@@ -184,6 +220,10 @@
         width: 100%;
         font-size: 2.5em;
     }
+    // form-section
+    .formBlock, .form, .form__input {
+        width: 100%;
+    }
 }
 
 @media  screen and (max-width:510px) {
@@ -202,7 +242,7 @@
         padding: 30px 20px 0px 20px;
     }
     // 2-nd block
-    .price_programms, .bonus, .teachers, .learning {
+    .price_programms, .bonus, .teachers, .learning, .form-section {
         padding: 30px 20px;
     }
 }
