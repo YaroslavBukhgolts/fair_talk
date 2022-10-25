@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
     @@include('templ/head.html', {
-        "title": "Fair talk"
+        "title": "Fair talk - главная"
     })
 <body>
-    <!-- HEADER -->
-    @@include('templ/header.html')
+    <div class="container">
+        <!-- HEADER -->
+        @@include('templ/header.html')
 
-    <!-- MAIN -->
+        <!-- MAIN -->
+        <main class="main">
+            <!-- MAIN BANER -->
+            @@include('templ/mainBaner.html')
 
+            <!-- PRICE AND PROGRAMMS -->
+            @@include('templ/price_programms.html')
 
-    <!-- FOOTER -->
-    @@include('templ/footer.html')
+            <!-- BOUS BLOCK -->
+            @@include('templ/bonus.html')
 
+            <!-- TEACHERS BLOCK -->
+            @@include('templ/teachers.html')
+
+            <!-- LEARNING BLOCK -->
+            @@include('templ/learning.html')
+
+            <!-- FORM BLOCK -->
+            @@include('templ/form.html')
+        </main>
+
+        <!-- FOOTER -->
+        @@include('templ/footer.html')
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

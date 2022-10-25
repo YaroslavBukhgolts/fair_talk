@@ -1,0 +1,302 @@
+@media  screen and (max-width:1725px) {
+    // 1-st block
+    .mainBaner__title {
+        font-size: 5em;
+    }
+    .form-section {
+        background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, 
+                    url("../img/form/bg_img.jpg") no-repeat 60% 60px, 
+                    linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    // 2-nd block
+    .price_programms__list{
+        margin-bottom: 60px;
+    }    
+    .price_programms__item {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 1540px){
+    // 2-nd block
+    .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+        padding: 100px 80px;
+    }
+    .form-section {
+        background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, 
+                    url("../img/form/bg_img.jpg") no-repeat 60% 60px, 
+                    linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
+}
+
+@media  screen and (max-width:1437px) {
+    // 1-st block
+    .mainBaner__title {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    // 2-nd block
+    .price_programms {
+        padding: 80px;
+    }
+    .price_programms__icons {
+        width: 15%;
+    }
+    .price_programms__title {
+        font-size: 1.3em;
+    }
+    .price__list{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .price__item {
+        max-width: 30%;
+    }
+    .form-section {
+        background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, 
+                    url("../img/form/bg_img.jpg") no-repeat 50% 60px, 
+                    linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .section__title {
+        font-size: 2.5em;
+    }
+    // 4-th block
+    .learning__cards {
+        row-gap: 50px;
+    }
+    .learning__card {
+        max-width: 30%;
+    }
+}
+
+@media  screen and (max-width:1150px) {
+    // 1-st block
+    .mainBaner__title {
+        font-size: 3em;
+        line-height: 70px;
+    }
+    .header__menuItem {
+        margin-right: 30px;
+    }
+}
+
+@media  screen and (max-width:1115px) {
+    // 1-st block
+    .mainBaner__title {
+        font-size: 2em;
+        line-height: 50px;
+    }
+
+}
+
+@media  screen and (max-width:1024px) {
+    // 1-st block
+    .header__wrapper {
+        flex-wrap: wrap;
+    }
+    .header__menu {
+        order: 1;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .header__menuList {
+        justify-content: space-between;
+    }
+    .mainBaner {
+        min-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section__title {
+        font-size: 2.3em;
+    }
+    // 2-nd block
+    .price_programms__title {
+        font-size: 1.2em;
+    }
+    // 4-th block
+    .learning__card {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .section__title {
+        font-size: 2.1em;
+    }  
+    // 2-nd block  
+    .price_programms__icons {
+        display: none;
+    }
+    .price__item, .learning__card {
+        max-width: 48%;
+    }
+    // 3-rd block
+    .bonus__item {
+        min-width: 48%;
+    }
+    .bonus__item:nth-child(4) {
+        order: 1;
+    }
+    // form section
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
+    .form__textContent {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-section {
+        background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, 
+        url(../img/form/bg_img.jpg) no-repeat 90% 65%, 
+        linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
+}
+
+@media  screen and (max-width:646px) {
+    .header__wrapper {
+        padding: 30px 60px 0px 60px;
+    }
+    .header__menu,
+    .linkFreeBlock {
+        display: none;
+    }
+    .header__burger-menu {
+        display: block;
+    }
+    // 2-nd block
+    .price_programms {
+        padding: 60px;
+    }
+    .price_programms__list {
+        flex-direction: column;
+    }
+    .section__title {
+        text-align: center;
+    }
+    .price__list {
+        justify-content: center;
+    }
+    .price__item, .learning__card {
+        max-width: 100%;
+    }
+    // 3-rd block
+    .bonus__item {
+        min-width: 100%;
+    }
+    // form-section
+    .form-section {
+        background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+    }
+    // footer
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__social {
+        margin-bottom: 30px;
+    }
+}
+
+@media  screen and (max-width:575px) {
+    // 1-st block
+    .mainBaner {
+        background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+        min-height: 35vh;
+        padding: 0 60px;
+    }
+    .mainBaner__icon {
+        max-width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    .mainBaner__title {
+        width: 100%;
+        font-size: 2.5em;
+    }
+    // form-section
+    .formBlock, .form, .form__input {
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width:510px) {
+    // 1-st block
+    .mainBaner__title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .section__title {
+        margin-bottom: 50px;
+    }
+    // 1-st block
+    .header__wrapper {
+        padding: 30px 20px 0px 20px;
+    }
+    // 2-nd block
+    .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+        padding: 30px 20px;
+    }
+}
+
+@media  screen and (max-width:425px) {
+    // 1-st block
+    .mainBaner {
+        min-height: 30vh;
+    }
+    .mainBaner__title {
+        font-size: 1.8em;
+    }
+}
+
+@media  screen and (max-width:400px) {
+    // 1-st block
+    .mainBaner {
+        min-height: 25vh;
+    }
+    .mainBaner__title {
+        font-size: 1.6em;
+        line-height: 40px;
+    }
+}
+
+@media  screen and (max-width:340px) {
+    // 1-st block
+    .mainBaner {
+        min-height: 20vh;
+    }
+    .mainBaner__title {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    // 3 -rd block
+    .section-teachers__title {
+        margin-bottom: 20px;
+    }
+    .teachers__item {
+        width: 100%;
+    }
+    .teachers__title {
+        text-align: center;
+    }
+}
