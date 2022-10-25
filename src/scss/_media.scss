@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 1540px){
     // 2-nd block
-    .price_programms, .bonus, .teachers {
+    .price_programms, .bonus, .teachers, .learning {
         padding: 100px 80px;
     }
 }
@@ -52,6 +52,13 @@
 @media screen and (max-width:1200px) {
     .section__title {
         font-size: 2.5em;
+    }
+    // 4-th block
+    .learning__cards {
+        row-gap: 50px;
+    }
+    .learning__card {
+        max-width: 30%;
     }
 }
 
@@ -101,6 +108,10 @@
     .price_programms__title {
         font-size: 1.2em;
     }
+    // 4-th block
+    .learning__card {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -111,7 +122,7 @@
     .price_programms__icons {
         display: none;
     }
-    .price__item {
+    .price__item, .learning__card {
         max-width: 48%;
     }
     // 3-rd block
@@ -147,7 +158,7 @@
     .price__list {
         justify-content: center;
     }
-    .price__item {
+    .price__item, .learning__card {
         max-width: 100%;
     }
     // 3-rd block
@@ -191,7 +202,7 @@
         padding: 30px 20px 0px 20px;
     }
     // 2-nd block
-    .price_programms, .bonus, .teachers {
+    .price_programms, .bonus, .teachers, .learning {
         padding: 30px 20px;
     }
 }

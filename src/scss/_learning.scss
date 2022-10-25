@@ -14,13 +14,13 @@
 }
 .learning__cards {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .learning__card {
     max-width: 23%;
-    height: 350px;
+    min-height: 350px;
     background: #FFFFFF;
     border-radius: 12px;
     padding: 30px;
