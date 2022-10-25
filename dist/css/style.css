@@ -1,0 +1,2907 @@
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro-Bold.woff2") format("woff2"), url("../fonts/gothampro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro-Medium.woff2") format("woff2"), url("../fonts/gothampro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro-Normal.woff2") format("woff2"), url("../fonts/gothampro-Normal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.techers__list, .listOptions__item, .price__item, .price__list, .price_programms__item, .price_programms__list, .mainBaner {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.container {
+  width: 100%;
+}
+
+.section {
+  padding: 100px 16.40625%;
+}
+
+.linkFreeBlock, .header__menuLink {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.4em;
+  line-height: 24px;
+}
+
+.header__wrapper {
+  position: relative;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+  font-size: 14px;
+}
+
+.header__menuList {
+  display: flex;
+}
+
+.header__menuItem {
+  position: relative;
+  margin-right: 60px;
+}
+
+.header__menuItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  background-color: #FB4516;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.header__menuItem:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+  transition: transform 0.25s;
+}
+
+.header__menuItem:last-child {
+  margin-right: 0px;
+}
+
+.header__menuLink {
+  font-weight: 500;
+}
+
+.linkFreeBlock {
+  padding: 14px 30px;
+  font-weight: 600;
+  outline: 1px solid #141414;
+  border-radius: 100px;
+  transition-duration: 0.7s;
+  font-weight: 600;
+}
+.linkFreeBlock a {
+  transition-duration: 0.7s;
+}
+
+.linkFreeBlock:hover {
+  background-color: #FB4516;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 0.7s;
+}
+.linkFreeBlock:hover a {
+  color: #FFFFFF;
+  transition-duration: 0.7s;
+}
+.linkFreeBlock:hover a {
+  color: #FFFFFF;
+}
+
+.linkFreeBlock:active {
+  transform: scale(0.9);
+}
+
+.header__burger-menu {
+  display: none;
+}
+
+.header__burger-menu:hover {
+  cursor: pointer;
+}
+
+.header__mobile-menu {
+  display: none;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__mobile-close {
+  text-align: end;
+}
+
+.header__mobile-close button {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu__list {
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 24px;
+  color: #141414;
+}
+
+.mobile-menu__item {
+  margin-bottom: 24px;
+}
+
+.mobile-menu__item:last-child {
+  margin-bottom: 61px;
+}
+
+.mobile-menu__linkFree {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 100px;
+  text-align: center;
+  padding: 13px 103px;
+  margin-bottom: 153px;
+  background-color: #645CC3;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+.mobile-menu__linkFree:active {
+  transform: scale(0.95);
+  transition-duration: 0.4s;
+}
+
+.mobile__linkFree {
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.mobile-menu__phone {
+  font-family: gothampro, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 32px;
+  color: #141414;
+  margin-bottom: 12px;
+}
+
+.mobile-menu__text {
+  font-family: gothampro, sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 18px;
+  color: #141414;
+  margin-bottom: 24px;
+}
+
+.mobile_socialLink {
+  margin-right: 12px;
+}
+
+.mobile_socialLink:last-child {
+  margin-right: 0;
+}
+
+.mobile-menu-visible {
+  display: flex;
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}
+.mainBaner {
+  background: url("../img/1.jpg") 96.3541666667% center/40% no-repeat, url("../img/Ellipse3.svg") no-repeat 47% 1%, url("../img/Vector1.svg") no-repeat 10% 90%, url("../img/Vector2.svg") no-repeat 90% 95%, linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+  min-height: 90vh;
+  padding-left: 16.1458333333%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainBaner__title {
+  font-family: gothampro;
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 92px;
+  width: 50%;
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}
+.price_programms {
+  background-color: #F7F7F8;
+  padding-left: 235px;
+  padding-right: 235px;
+}
+
+.section__title {
+  font-family: gothampro;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 38px;
+  margin-bottom: 90px;
+}
+
+.price_programms__programms {
+  position: relative;
+}
+
+.price_programms__list {
+  position: relative;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.price_programms__list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 8px solid #FB4516;
+  border-radius: 16px;
+  border-bottom: 1px solid black;
+}
+
+.price_programms__item {
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.price_programms__item:hover {
+  background-color: gray;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.price_programms__item:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 8px solid #FB4516;
+  border-radius: 16px;
+}
+
+.price_programms__icons {
+  margin-right: 24px;
+}
+
+.price_programms__title {
+  font-family: gothampro;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 24px;
+}
+
+.active_programms {
+  background-color: gray;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.active_programms::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 8px solid #FB4516;
+  border-radius: 16px;
+}
+
+.price_programms__tab {
+  display: none;
+}
+
+.price__list {
+  justify-content: space-between;
+}
+
+.price__item {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  max-width: 24%;
+  padding: 94px 20px 30px;
+}
+
+.price__title {
+  font-family: gothampro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 32px;
+  color: #645CC3;
+  margin-bottom: 24px;
+}
+
+.price__price {
+  background: #F7F5FF;
+  border-radius: 100px;
+  display: flex;
+  padding: 12px 30px;
+  margin-bottom: 24px;
+}
+
+.price {
+  position: relative;
+  font-family: gothampro;
+}
+.price span {
+  font-family: gothampro;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 32px;
+  color: #645CC3;
+}
+
+.price:first-child {
+  padding-right: 28px;
+}
+
+.price > span:last-child {
+  font-family: gothampro;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #645CC3;
+  opacity: 0.5;
+}
+
+.price:first-child::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  width: 38%;
+  border: 1px solid #645CC3;
+  transform: rotate(90deg);
+  opacity: 0.2;
+}
+
+.listOptions__item {
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+
+.listOptions__item:last-child {
+  margin-bottom: 0px;
+}
+
+.listOptions__icon {
+  margin-right: 15px;
+}
+
+.listOptions__tex {
+  font-family: gothampro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.visible {
+  display: block;
+}
+
+.priceLink {
+  background-color: #645CC3;
+  width: 355px;
+  margin: 0 auto;
+  margin-top: 80px;
+  outline: none;
+}
+
+.price__linkFree {
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+}
+
+.discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #645CC3;
+  width: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 37px;
+  padding-bottom: 47px;
+  border-radius: 100% 0% 23% 77%/0% 30% 70% 100%;
+  font-family: gothampro;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}
+.purpe, .blue, .coquelicot, .stateBlue {
+  color: #FFFFFF;
+}
+
+.bonus {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bonus__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  row-gap: 30px;
+}
+
+.bonus__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 12px;
+  flex-basis: 31%;
+  padding: 29px 30px 24px;
+  min-height: 190px;
+}
+
+.bonus__icon {
+  margin-bottom: 30px;
+}
+
+.bonus__content {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.grey {
+  background-color: #F7F7F8;
+}
+
+.stateBlue {
+  background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+}
+
+.yellow {
+  background: linear-gradient(90deg, #FFC600 0%, rgba(255, 198, 0, 0.5) 100%);
+}
+
+.coquelicot {
+  background: linear-gradient(90deg, #FB4516 0%, rgba(251, 69, 22, 0.75) 100%);
+}
+
+.blue {
+  background: linear-gradient(90deg, #5CD8B4 0%, rgba(92, 216, 180, 0.75) 100%);
+}
+
+.purpe {
+  background: linear-gradient(90deg, #D35CDE 0%, #FF7BC4 100%);
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}
+.teachers {
+  background-color: #F7F7F8;
+  display: flex;
+  flex-direction: column;
+}
+
+.teachers__block {
+  width: 100%;
+  height: 100%;
+}
+
+.section-teachers__title {
+  margin-bottom: 60px;
+}
+
+.swiper1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.techers__list {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teachers__item {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.item__front,
+.item__back {
+  position: absolute;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition-duration: 1.5s;
+  padding: 20px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.item__front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item__back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  transition-duration: 1.5s;
+}
+
+.teachers__item:hover .item__front {
+  transform: rotateY(180deg);
+  transition-duration: 1.5s;
+  transform: rotateY(180deg);
+}
+
+.teachers__item:hover .item__back {
+  transform: rotateY(360deg);
+  transition-duration: 1.5s;
+  transform: rotateY(360deg);
+}
+
+.teachers__photoBlock {
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.teachers__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.teachers__title {
+  font-family: gothampro;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 32px;
+  color: #645CC3;
+}
+
+.teachers__text {
+  font-family: gothampro;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 20px;
+  text-align: center;
+}
+
+.teachers__navigation {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button__navigation {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+}
+.button__navigation span {
+  font-size: 25px;
+}
+
+.button__navigation:hover {
+  opacity: 0.8;
+}
+
+.button__navigation:active {
+  transform: scale(0.9);
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}
+.learning {
+  background: url("../img/learning_bg.jpg") no-repeat center/100%;
+  background-size: contain;
+}
+
+.learning__title {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 32px;
+  color: #141414;
+  margin-bottom: 60px;
+}
+
+.learning__cards {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.learning__card {
+  max-width: 23%;
+  min-height: 350px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 30px;
+  -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.learning__card-icon {
+  margin-bottom: 110px;
+}
+
+.learning__card-title {
+  font-family: gothampro, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 28px;
+  color: #141414;
+  margin-bottom: 12px;
+}
+
+.learning__card__text {
+  font-family: gothampro, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 20px;
+  color: #141414;
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}
+.form-section {
+  background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.form__textContent {
+  max-width: 472px;
+}
+
+.textContent__title {
+  font-family: gothampro, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.textContent__list > p {
+  font-family: gothampro, sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.textContent__listItem {
+  position: relative;
+  font-family: gothampro, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-left: 16px;
+}
+
+.textContent__listItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.formBlock {
+  max-width: 400px;
+  background: #FFFFFF;
+  box-shadow: 8px 25px 90px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px 40px 40px 40px;
+}
+
+.form__title {
+  font-family: "Gotham Pro";
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 28px;
+  color: #141414;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  width: 320px;
+  background: #F7F7F8;
+  border-radius: 100px;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #8B8B8B;
+  outline: none;
+}
+
+.form__input:first-child {
+  margin-bottom: 12px;
+}
+
+.form__input:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 100%;
+  background: #645CC3;
+  border-radius: 100px;
+  padding: 12px 58px;
+  font-family: #FFFFFF;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  transition-duration: 0.7s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #FB4516;
+  transition-duration: 0.7s;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__phone {
+  margin-bottom: 24px;
+}
+
+.footer__phone p:first-child {
+  font-family: gothampro, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 32px;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+.footer__phone p:nth-child(2),
+.footer__rigths p {
+  font-family: gothampro, sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 18px;
+  color: #141414;
+}
+
+.footer__social img {
+  transition-duration: 0.7s;
+}
+
+.footer__social img:first-child,
+.footer__social img:nth-child(2) {
+  margin-right: 12px;
+}
+
+.footer__social img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition-duration: 0.7s;
+}
+
+@media screen and (max-width: 1725px) {
+  .mainBaner__title {
+    font-size: 5em;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1650px) {
+  .price_programms__list {
+    margin-bottom: 60px;
+  }
+  .price_programms__item {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 100px 80px;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 60% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1437px) {
+  .mainBaner__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .price_programms {
+    padding: 80px;
+  }
+  .price_programms__icons {
+    width: 15%;
+  }
+  .price_programms__title {
+    font-size: 1.3em;
+  }
+  .price__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .price__item {
+    max-width: 30%;
+  }
+  .form-section {
+    background: url("../img/form/bg_ellipse.svg") no-repeat 10% 12%, url("../img/form/bg_img.jpg") no-repeat 50% 60px, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.5em;
+  }
+  .learning__cards {
+    row-gap: 50px;
+  }
+  .learning__card {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainBaner__title {
+    font-size: 3em;
+    line-height: 70px;
+  }
+  .header__menuItem {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .mainBaner__title {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    order: 1;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .header__menuList {
+    justify-content: space-between;
+  }
+  .mainBaner {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 2.3em;
+  }
+  .price_programms__title {
+    font-size: 1.2em;
+  }
+  .learning__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__title {
+    font-size: 2.1em;
+  }
+  .price_programms__icons {
+    display: none;
+  }
+  .price__item, .learning__card {
+    max-width: 48%;
+  }
+  .bonus__item {
+    min-width: 48%;
+  }
+  .bonus__item:nth-child(4) {
+    order: 1;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 45%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .form__textContent {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-section {
+    background: url(../img/form/bg_ellipse.svg) no-repeat 10% 5%, url(../img/form/bg_img.jpg) no-repeat 90% 65%, linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+}
+@media screen and (max-width: 646px) {
+  .header__wrapper {
+    padding: 30px 60px 0px 60px;
+  }
+  .header__menu,
+.linkFreeBlock {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
+  .price_programms {
+    padding: 60px;
+  }
+  .price_programms__list {
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .price__list {
+    justify-content: center;
+  }
+  .price__item, .learning__card {
+    max-width: 100%;
+  }
+  .bonus__item {
+    min-width: 100%;
+  }
+  .form-section {
+    background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mainBaner {
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 35vh;
+    padding: 0 60px;
+  }
+  .mainBaner__icon {
+    max-width: 50%;
+  }
+  .mainBaner__icon img {
+    width: 100%;
+  }
+  .mainBaner__title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .formBlock, .form, .form__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .mainBaner__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .header__wrapper {
+    padding: 30px 20px 0px 20px;
+  }
+  .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainBaner {
+    min-height: 30vh;
+  }
+  .mainBaner__title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainBaner {
+    min-height: 25vh;
+  }
+  .mainBaner__title {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mainBaner {
+    min-height: 20vh;
+  }
+  .mainBaner__title {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .section-teachers__title {
+    margin-bottom: 20px;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__title {
+    text-align: center;
+  }
+}

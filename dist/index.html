@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Fair talk - главная</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+    <div class="header__wrapper">
+        <!-- logo block -->
+        <div class="header__logo">
+            FAIR TALK
+        </div>
+
+        <!-- menu block -->
+        <nav class="header__menu">
+            <ul class="header__menuList">
+                <li class="header__menuItem"><a href="#" class="header__menuLink">О нас</a></li>
+                <li class="header__menuItem"><a href="#" class="header__menuLink">Программы и цены</a></li>
+                <li class="header__menuItem"><a href="#" class="header__menuLink">Преподаватели</a></li>
+            </ul>
+        </nav>
+
+        <!-- ссылка -->
+        <div class="linkFreeBlock">
+            <a href="#linkFree" class="linkFree">Бесплатный урок</a>
+        </div>
+
+        <!-- burger menu btn -->
+        <div class="header__burger-menu">
+            <img src="img/burger_menu.svg" alt="меню">
+        </div>
+
+        <!-- mobile menu -->
+        <div class="header__mobile-menu animate__animated">
+            <div class="header__mobile-close">
+                <button>
+                    <img src="img/mobile-menu_close.svg" alt="крестик">
+                </button>
+            </div>
+            <div class="mobile__wrapper">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О нас</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Программы и цены</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Преподаватели</a></li>
+                </ul>
+            </div>
+            
+            <div class="mobile__wrapper">
+                <div class="mobile-menu__linkFree">
+                    <a href="#linkFree" class="mobile__linkFree">Бесплатный урок</a>
+                </div>
+            </div>
+
+            <div class="mobile__wrapper">
+                <p class="mobile-menu__phone">8 800 000 00 00</p>
+                <p class="mobile-menu__text">Рады слышать вас с 9:00 до 21:00</p>
+                <div class="mobile__socialBlock">
+                    <a href="#" class="mobile_socialLink"><img src="img/social/facebook.png" alt="facebook"></a>
+                    <a href="#" class="mobile_socialLink"><img src="img/social/vk.png" alt="vk"></a>
+                    <a href="#" class="mobile_socialLink"><img src="img/social/inst.png" alt="instagramm"></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+</header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- MAIN BANER -->
+            <!-- MAIN BANNER -->
+<section class="mainBaner">
+    <div class="mainBaner__icon">
+        <img src="img/main_baner_icon.svg" alt="baner icons">
+    </div>
+    <h1 class="mainBaner__title">Онлайн школа английского языка</h1>
+</section>
+
+            <!-- PRICE AND PROGRAMMS -->
+            <!-- Программы и цены -->
+<section class="section price_programms">
+    <div class="section__wrapper">
+        <h2 class="section__title">Программы и цены</h2>
+        
+        <!-- PROGRAMMS AND PRICE BLOCK -->
+        <div class="price_programms__block">
+            <!-- PROGRAMMS BLOCK -->
+            <div class="price_programms__programms">
+                <!-- PROGRAMMS LIST -->
+                <ul class="price_programms__list">
+                    <!-- PROGRAMMS ITEM 1 -->
+                    <li class="price_programms__item active_programms" data-tab="tab-1">
+                        <img src="img/programms_icons/Icon1.svg" class="price_programms__icons"></img>
+                        <h3 class="price_programms__title">Course «Junior»</h3>
+                    </li>
+                    <!-- PROGRAMMS ITEM 2 -->
+                    <li class="price_programms__item" data-tab="tab-2">
+                        <img src="img/programms_icons/Icon2.svg" class="price_programms__icons"></img>
+                        <h3 class="price_programms__title">Course «Middle»</h3>
+                    </li>
+                    <!-- PROGRAMMS ITEM 3 -->
+                    <li class="price_programms__item" data-tab="tab-3">
+                        <img src="img/programms_icons/Icon3.svg" class="price_programms__icons"></img>
+                        <h3 class="price_programms__title">Course «Senor»</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- PRICE BLOCK -->
+            <div class="price_programms__price">
+                <!-- TAB1 -->
+                <div class="price_programms__tab visible tab-1">
+                    <ul class="price__list">
+                        <!-- ITEM 1 -->
+                        <li class="price__item">
+                            <div class="discount active-block">30% на год</div>
+                            <h3 class="price__title">8 уроков</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>1 170 ₽</span><br> <span>за занятие</span> 
+                                </div>
+                                <div class="price">
+                                    <span>9 360 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- ITEM 2 -->
+                        <li class="price__item">
+                            <h3 class="price__title">16 уроков</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>696 ₽</span><br> <span>за занятие</span> 
+                                </div>
+                                <div class="price">
+                                    <span>16 704 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- ITEM 3 -->
+                        <li class="price__item">
+                            <h3 class="price__title">24 урока</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>660 ₽</span><br> <span>за занятие</span> 
+                                </div>
+                                <div class="price">
+                                    <span>31 680 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- ITEM 4 -->
+                        <li class="price__item">
+                            <h3 class="price__title">32 урока</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>680 ₽</span><br> <span>за занятие</span>
+                                </div>
+                                <div class="price">
+                                    <span>42 830 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- TAB2 -->
+                <div class="price_programms__tab tab-2">
+                    <ul class="price__list">
+                        <!-- ITEM 1 -->
+                        <li class="price__item">
+                            <h3 class="price__title">8 уроков</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>1 170 ₽</span><br> <span>за занятие</span> 
+                                </div>
+                                <div class="price">
+                                    <span>9 360 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- TAB3 -->
+                <div class="price_programms__tab tab-3">
+                    <ul class="price__list">
+                        <!-- ITEM 1 -->
+                        <li class="price__item">
+                            <h3 class="price__title">8 уроков</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>1 170 ₽</span><br> <span>за занятие</span> 
+                                </div>
+                                <div class="price">
+                                    <span>9 360 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- ITEM 2 -->
+                        <li class="price__item">
+                            <h3 class="price__title">16 уроков</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>696 ₽</span><br> <span>за занятие</span> 
+                                </div>
+                                <div class="price">
+                                    <span>16 704 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- ITEM 3 -->
+                        <li class="price__item">
+                            <h3 class="price__title">24 урока</h3>
+                            <div class="price__price">
+                                <div class="price">
+                                    <span>660 ₽</span><br> <span>за занятие</span> 
+                                </div>
+                                <div class="price">
+                                    <span>31 680 ₽</span><br> <span>полная стоимость</span>
+                                </div>
+                            </div>
+                            <ul class="price__listOptions">
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">2 занятия в неделю</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">8 занятий каждые 4 недели</p>
+                                </li>
+                                <li class="listOptions__item">
+                                    <img src="img/programms_icons/icon4.svg" alt="галочка" class="listOptions__icon">
+                                    <p class="listOptions__tex">единоразовый платеж без автопродления</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- LINK FREE -->
+        <!-- ссылка -->
+        <div class="linkFreeBlock priceLink">
+            <a href="#linkFree" class="price__linkFree">Попробовать бесплатно</a>
+        </div>
+    </div>    
+</section>
+
+            <!-- BOUS BLOCK -->
+            <section class="section bonus">
+    <div class="section__wrapper">
+        <h2 class="section__title">А так же бесплатно для всех учеников</h2>
+        <div class="bonus__block">
+            <ul class="bonus__list">
+                <li class="bonus__item grey">
+                    <img src="img/bonus_icons/grey.svg" alt="галочка" class="bonus__icon">
+                    <p class="bonus__content">Тестирование в течении всего периода обучения</p>
+                </li>
+                <li class="bonus__item stateBlue">
+                    <img src="img/bonus_icons/stateBlue.svg" alt="календарь" class="bonus__icon">
+                    <p class="bonus__content">Бесплатные тематические мероприятия</p>
+                </li>
+                <li class="bonus__item yellow">
+                    <img src="img/bonus_icons/yellow.svg" alt="телефон" class="bonus__icon">
+                    <p class="bonus__content">Приложение с онлайн тренажером для запоминания новых слов</p>
+                </li>
+                <li class="bonus__item coquelicot">
+                    <img src="img/bonus_icons/coquelicot.svg" alt="монитор" class="bonus__icon">
+                    <p class="bonus__content">Платформа с интерактивными упражнениями с автоматической проверкой ответов и электронным дневником достижений</p>
+                </li>
+                <li class="bonus__item blue">
+                    <img src="img/bonus_icons/blue.svg" alt="медаль" class="bonus__icon">
+                    <p class="bonus__content">Сертификат по окончанию обучения</p>
+                </li>
+                <li class="bonus__item purpe">
+                    <img src="img/bonus_icons/purpe.svg" alt="скидка" class="bonus__icon">
+                    <p class="bonus__content">Налоговый вычет 13%</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <!-- TEACHERS BLOCK -->
+            <!-- TEACHERS BLOCK -->
+<section class="section teachers">
+        <h2 class="section__title section-teachers__title">Наши преподаватели</h2>
+
+        <!-- TEACHERS ITEM BLOCK -->
+        <div class="teachers__block swiper swiper2">
+
+            <!-- SWIPER -->
+            <!-- Slider main container -->
+            <div class="swiper swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="teachers__item swiper-slide">
+                        <div class="item__front">
+                            <div class="teachers__photoBlock">
+                                <img src="img/teachers/1.jpg" alt="Фото преподавателя" class="teachers__photo">
+                            </div>
+                            <h3 class="teachers__title">Имя преподавателя 1</h3>
+                            <p class="teachers__text">Английский</p>
+                        </div>
+                        <div class="item__back">
+                            <p class="teachers__text">Краткая ниформация о преподавателе</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="teachers__item swiper-slide">
+                        <div class="item__front">
+                            <div class="teachers__photoBlock">
+                                <img src="img/teachers/1.jpg" alt="Фото преподавателя" class="teachers__photo">
+                            </div>
+                            <h3 class="teachers__title">Имя преподавателя 2</h3>
+                            <p class="teachers__text">Английский</p>
+                        </div>
+                        <div class="item__back">
+                            <p class="teachers__text">Краткая ниформация о преподавателе</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="teachers__item swiper-slide">
+                        <div class="item__front">
+                            <div class="teachers__photoBlock">
+                                <img src="img/teachers/1.jpg" alt="Фото преподавателя" class="teachers__photo">
+                            </div>
+                            <h3 class="teachers__title">Имя преподавателя 3</h3>
+                            <p class="teachers__text">Английский</p> 
+                        </div>
+                        <div class="item__back">
+                            <p class="teachers__text">Краткая ниформация о преподавателе</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <!-- NAVIGATION BLOCK -->
+            <div class="teachers__navigation">
+                <button class="button__navigation prev"><span>&#60;</span></button>
+                <button class="button__navigation next"><span>&#62;</span></button>
+            </div>
+        </div>
+</section>
+
+            <!-- LEARNING BLOCK -->
+            <section class="section learning">
+    <h2 class="section__title learning__title">Процесс обучения</h2>
+    <h3 class="subtitle">Мы не заставляем учится. Мы влюбляем в английский</h3>
+
+    <div class="learning__cards">
+        <div class="learning__card">
+            <img src="img/learning_icons/1.svg" alt="круг" class="learning__card-icon">
+            <h4 class="learning__card-title">Проверенная методика</h4>
+            <p class="learning__card__text">Кембриджская коммуникативная методика - более 50% урока ученики общаются на английском</p>
+        </div>
+        <div class="learning__card">
+            <img src="img/learning_icons/2.svg" alt="треугольник" class="learning__card-icon">
+            <h4 class="learning__card-title">Опытные преподаватели</h4>
+            <p class="learning__card__text">Многолетний стаж работы с детьми - умеют найти контакт и заинтересовать обучением</p>
+        </div>
+        <div class="learning__card">
+            <img src="img/learning_icons/3.svg" alt="ромб" class="learning__card-icon">
+            <h4 class="learning__card-title">Интерактивная платформа</h4>
+            <p class="learning__card__text">Тематические игры, мультики и задания от Чарли вовлекают ребенка с первых минут</p>
+        </div>
+        <div class="learning__card">
+            <img src="img/learning_icons/4.svg" alt="квадрат" class="learning__card-icon">
+            <h4 class="learning__card-title">Комплексный подход</h4>
+            <p class="learning__card__text">Дети изучают грамматику, пополняют словарный запас и улучшают разговорные нвыки</p>
+        </div>
+    </div>
+</section>
+
+            <!-- FORM BLOCK -->
+            <section class="section form-section" id="linkFree">
+    <div class="form__textContent">
+        <h2 class="textContent__title">Заполните форму, чтобы
+            попасть на бесплатный
+            пробный урок</h2>
+        <div class="textContent__list">
+            <p>Что будет на пробном уроке</p>
+            <ul>
+                <li class="textContent__listItem">Познакомим с преподавателем</li>
+                <li class="textContent__listItem">Определим уровень знаний</li>
+                <li class="textContent__listItem">Подберем программу обучения</li>
+            </ul>
+        </div>
+    </div>
+    <div class="formBlock">
+        <h2 class="form__title">Запишитесь на бесплатный пробный урок</h2>
+        <form action="#" method="post" class="form">
+            <input type="text" class="form__input" name="name" id="name" placeholder="Ваше имя">
+            <input type="tel" class="form__input" name="phone" id="phone" placeholder="Ваш номер телефона">
+            <button submit="submit" class="button">Попробовать бесплатно</button>
+        </form>
+    </div>
+</section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer section">
+    <div class="footer__contacts">
+        <div class="footer__phone">
+            <p>8 800 000 00 00</p>
+            <p>Рады слышать вас с 9:00 до 21:00</p>
+        </div>
+        <div class="footer__social">
+            <a href="#"><img src="img/social/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="img/social/vk.png" alt="vk"></a>
+            <a href="#"><img src="img/social/inst.png" alt="instagramm"></a>
+        </div>
+    </div>
+    <div class="footer__rigths">
+        <p>&#169 Все права защищенны</p>
+    </div>
+</footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
