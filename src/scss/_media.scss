@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 1540px){
     // 2-nd block
-    .price_programms, .bonus, .teachers, .learning, .form-section {
+    .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
         padding: 100px 80px;
     }
     .form-section {
@@ -201,6 +201,16 @@
     .form-section {
         background: linear-gradient(90deg, #645CC3 0%, rgba(100, 92, 195, 0.75) 100%);
     }
+    // footer
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__social {
+        margin-bottom: 30px;
+    }
 }
 
 @media  screen and (max-width:575px) {
@@ -242,7 +252,7 @@
         padding: 30px 20px 0px 20px;
     }
     // 2-nd block
-    .price_programms, .bonus, .teachers, .learning, .form-section {
+    .price_programms, .bonus, .teachers, .learning, .form-section, .footer {
         padding: 30px 20px;
     }
 }
